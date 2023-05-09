@@ -1,1 +1,155 @@
-<iframe src="https://script.google.com/macros/s/AKfycbzO0bc1Kw1FZD9nbmjxtsSa6pTjEhRa48rxbYdA8IcdV3dkCbi6vmKrbYWuWn9A_ZRy/exec" frameborder="0" width="100%" height="100%"></iframe> 
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: "Lato", sans-serif;
+        background-color: white;
+    }
+    
+    /* Style the tab */
+    .tab {
+      float: left;
+      background-color: #f1f1f1;
+      border: 1px solid #aaa;
+      width: 30%;
+    }
+    
+    /* Style the buttons inside the tab */
+    .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #bbb;
+    }
+    
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+      background-color: #bbb;
+      border-right: 15px solid #008FD3;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      float: left;
+      width: 70%;
+      border-left: none;
+      height: 300px;
+    }
+
+    .airtable-embed{
+        border: 1px solid #aaa;
+        height: 90vh;
+    }
+    
+    </style>
+    </head>
+    <body>
+
+<h2>SAP Pre-Built Campaigns</h2>
+
+<div class="tab">
+  <button class="tablinks active" onclick="openTab(event, 'All')" id="defaultOpen">All</button>
+  <button class="tablinks" onclick="openTab(event, 'Advertising')">Advertising</button>
+  <button class="tablinks" onclick="openTab(event, 'Customer Reference')">Customer Reference / Success Stories</button>
+  <button class="tablinks" onclick="openTab(event, 'Digital Marketing')">Digital Marketing</button>
+  <button class="tablinks" onclick="openTab(event, 'Direct Marketing')">Direct Marketing</button>
+  <button class="tablinks" onclick="openTab(event, 'Physical Events')">Physical Events</button>
+  <button class="tablinks" onclick="openTab(event, 'Online Events')">Online / Virtual Events</button>
+  <button class="tablinks" onclick="openTab(event, 'Social Selling')">Social Selling</button>
+</div>
+
+<div id="All" class="tabcontent" style="display: block;">
+    <iframe class="airtable-embed" 
+        src="https://airtable.com/embed/shrfsepyxhKZpQCxM?backgroundColor=blueLight&viewControls=on" 
+        frameborder="0" onmousewheel="" width="100%" style="background: transparent;">
+    </iframe>
+</div>
+
+<div id="Advertising" class="tabcontent" style="display: none;">
+    <iframe class="airtable-embed" 
+        src="https://airtable.com/embed/shrP1IYQ3Hb3pQovf?backgroundColor=blueLight&viewControls=on" 
+        frameborder="0" onmousewheel="" width="100%" style="background: transparent;">
+    </iframe>
+</div>
+
+<div id="Customer Reference" class="tabcontent" style="display: none;">
+    <iframe class="airtable-embed" 
+        src="https://airtable.com/embed/shreVUBkLcURzau1K?backgroundColor=blueLight&viewControls=on" 
+        frameborder="0" onmousewheel="" width="100%" style="background: transparent;">
+    </iframe>
+</div>
+
+<div id="Digital Marketing" class="tabcontent" style="display: none;">
+    <iframe class="airtable-embed" 
+        src="https://airtable.com/embed/shruc4NZgOvOmQnMb?backgroundColor=blueLight&viewControls=on" 
+        frameborder="0" onmousewheel="" width="100%" style="background: transparent;">
+    </iframe>
+</div>
+
+<div id="Direct Marketing" class="tabcontent" style="display: none;">
+    <iframe class="airtable-embed" 
+        src="https://airtable.com/embed/shrymPQVpiQgCco5Q?backgroundColor=blueLight&viewControls=on" 
+        frameborder="0" onmousewheel="" width="100%" style="background: transparent;">
+    </iframe>
+</div>
+
+<div id="Physical Events" class="tabcontent" style="display: none;">
+    <iframe class="airtable-embed" 
+        src="https://airtable.com/embed/shreKNof5e6S0tIPl?backgroundColor=blueLight&viewControls=on" 
+        frameborder="0" onmousewheel="" width="100%" style="background: transparent;">
+    </iframe>
+</div>
+
+<div id="Online Events" class="tabcontent" style="display: none;">
+    <iframe class="airtable-embed" 
+        src="https://airtable.com/embed/shrrENo9r6X61Ai7m?backgroundColor=blueLight&viewControls=on" 
+        frameborder="0" onmousewheel="" width="100%" style="background: transparent;">
+    </iframe>
+</div>
+
+<div id="Social Selling" class="tabcontent" style="display: none;">
+    <iframe class="airtable-embed" 
+        src="https://airtable.com/embed/shrvjHf3ZER8Qxtdd?backgroundColor=blueLight&viewControls=on" 
+        frameborder="0" onmousewheel="" width="100%" style="background: transparent;">
+    </iframe>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+
+ 
+</body>
+</html>
