@@ -65,36 +65,47 @@
         </div>
     </div>
     <p id="demo"></p>
-    <div style="text-align: center; padding-right: 3rem; padding-left: 3rem; padding-top: 1rem;">
+    <div style="text-align: center; padding-right: 3rem; padding-left: 3rem; padding-top: 1rem; padding-bottom: 2vh;">
         <h1>Please familiarize yourself with the SLA and Legend.  Then select Enter the Shoppe to start your BDF Proposal</h1>
  
         <b><i style="color: red; font-size: 20px;">
           Note that non-SAP campaigns will be deprioritized. Please reach out to your PBM for Custom Campaigns
       </i></b>
     </div>
- 
-
-    <main>
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="javascript:void(0)" onclick="openOverlay('sla1.html')" style="text-decoration: none;">
-              <div style="font-size: 1vw; color: #efefef; background-color: #008FD3; width: 8vw; height: 1vw; border-radius: 30px; margin: 5vh auto; text-align: center; padding: 2vw; box-shadow: 5px 5px #EEEEEE; background: linear-gradient(to top, #1661BE 0%, #00B9F2 100%)">
-                SLA 
-            </div></a>
-            <a href="javascript:void(0)" onclick="openOverlay('legend.jpg')" style="text-decoration: none;">
-              <div style="font-size: 1vw; color: #efefef; background-color: #008FD3; width: 8vw; height: 1vw; border-radius: 30px; margin: 5vh auto; text-align: center; padding: 2vw; box-shadow: 5px 5px #EEEEEE; background: linear-gradient(to top, #1661BE 0%, #00B9F2 100%)">
-                Legend
-            </div></a><br>
+    <div id="sidebuttonbox"style="text-align: center; margin-top: 1rem; width: 25vw; height: 26vh; float: right;">
+        <div href="javascript:void(0)" onclick="openOverlay('sla1.html')" 
+            style="font-size: 2vw; color: #efefef; background-color: #008FD3; 
+            width: 8vw; height: 2vw; border-radius: 30px;
+            text-align: center; padding: 2vw; box-shadow: 5px 5px #EEEEEE; 
+            background: linear-gradient(to top, #1661BE 0%, #00B9F2 100%);
+            text-decoration: none; cursor: pointer; float: left;">
+            SLA
         </div>
-    </main>
-    <a href="#" onclick="showLoadingOverlay('https://jdoe19.github.io/MM/SAPBDF.html');" style="text-decoration: none;">
-      <div style="font-size: 5vw; color: #efefef; background-color: #008FD3; width: 30vw; height: 20vw; border-radius: 30px; margin: 5vh auto; text-align: center; padding: 2vw; box-shadow: 5px 5px #EEEEEE; background: linear-gradient(to top, #1661BE 0%, #00B9F2 100%)">
-         Enter the Shoppe
-      </div>
-  </a>
+        <div href="javascript:void(0)" onclick="openOverlay('legend.jpg')" 
+            style="font-size: 2vw; color: #efefef; background-color: #008FD3; 
+            width: 8vw; height: 2vw; border-radius: 30px; margin-top: 5vh;
+            text-align: center; padding: 2vw; box-shadow: 5px 5px #EEEEEE; 
+            background: linear-gradient(to top, #1661BE 0%, #00B9F2 100%);
+            text-decoration: none; cursor: pointer; float: left; clear: left;">
+            Legend
+        </div>
+        <br>
+    </div>
+    <a id="shoppebox" style="margin: 10vh auto; width: 40vw; text-align: center;">
+        <div href="#" onclick="showLoadingOverlay('https://jdoe19.github.io/MM/SAPBDF.html');" 
+            style="font-size: 5vw; color: #efefef; background-color: #008FD3; 
+            width: 30vw; height: 22vh; border-radius: 30px; margin:0vh auto; 
+            text-align: center; padding: 2vw; box-shadow: 5px 5px #EEEEEE; 
+            background: linear-gradient(to top, #1661BE 0%, #00B9F2 100%);
+            text-decoration: none; cursor: pointer;">
+            Enter the Shoppe
+    </div>
+</a>
+        
   
   <div id="overlay1" class="overlay">
       <div class="overlay-content">
-          <p>Please note there may be a brief loading delay of up to 15s on the following page. We appreciate your patience during this process.</p>
+          <p>Please note there may be a brief loading delay of up to 15s on the following page. <br> We appreciate your patience during this process.</p>
           <button class="close-btn" onclick="closeOverlayAndRedirect('https://jdoe19.github.io/MM/SAPBDF.html')">Close</button>
       </div>
   </div>
@@ -182,4 +193,3 @@
 </body>
 
 </html>
-
