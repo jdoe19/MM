@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* CSS styles for overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .overlay-content {
+          background-color: #fff;
+            padding: 20px;
+            width: 100%;
+            max-width: 1080px;
+            height: 90vh;
+            overflow: auto;
+            text-align: center;
+        }
+
+        
+    .overlay-content.maximize {
+        overflow: hidden;
+    }
+
+  .overlay-content.maximize img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+  }
+
+        .close-btn {
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 0px;
+        }
+
+        *{
+            border: 1px solid transparent;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+         .tiles {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .tile {
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+            margin-left: 10px;
+            background: linear-gradient(to top, #1661BE 0%, #00B9F2 100%)
+        }
+
+        .tile:hover {
+            transform: translateY(-5px);
+        }
+
+        .tile a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div style="overflow: hidden; background-color: #0073a9;width: 100%;">
+        <div>
+            <img style="float: left;" src="https://www.sap.com/content/dam/application/shared/logos/sap-logo-svg.svg" width="90" height="60">
+            <h2 style="color:#EFEFEF; font-family: 'Lato', sans-serif;">SPARK</h2>
+        </div>
+    </div>
+    <div style="text-align: center; padding-right: 3rem; padding-left: 3rem; padding-top: 1rem; padding-bottom: 2vh;">
+        <h1> Welcome to the 2024 S.P.A.R.K. Marketing Planning Tool.</h1> <h2>This platform is designed to provide our partners and SAP clear insight into your sales objectives, the marketing tactics you will use to achieve them, and how SAP can best support you in your demand generation activities.  </h2>
+ 
+        <b><i style="color: red; font-size: 20px;">
+          IMPORTANT: Please provide ALL the tactics, programs, and campaigns you intend to run as it pertains to your 2024 Marketing Plan. This includes both BDF supported programs and those that you will fund on your own
+      </i></b>
+    </div>
+    <div class="container">
+        <div class="tiles">
+            <div class="tile">
+                <h2><a href="https://jdoe19.github.io/MM/PMP.html" target = "_blank">Create Plan</a></h2>
+            </div>
+            <div class="tile">
+                <h2><a href="https://jdoe19.github.io/MM/activity.html" target = "_blank" title="You will need your ConfirmationID">Add Activities</a></h2>
+            </div>
+            <div class="tile">
+                <h2><a href="https://jdoe19.github.io/MM/Display.html" target = "_blank" title="You will need your ConfirmationID">View Existing Plan</a></h2>
+            </div>
+        </div>
+    
+
+</body>
+
+</html>
